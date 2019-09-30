@@ -154,28 +154,19 @@ public class Course {
             }
         }
 
-        System.out.println("Mutable student IDs : " + mutableStudentIds);
-
         ArrayList<Integer> finalStudentIds = new ArrayList<Integer>();
 
         for (int i = 0; i < mutableStudentIds.size(); i++) {
             if (finalStudentIds.contains(mutableStudentIds.get(i))) {
-                System.out.println("Duplicate ID - let's continue");
                 continue;
             }
             finalStudentIds.add(mutableStudentIds.get(i));
         }
 
-        System.out.println("Final student IDs : " + finalStudentIds + " of size " + finalStudentIds.size());
-
         int[] cleanStudentIds = new int[finalStudentIds.size()];
 
         for (int i = 0; i < finalStudentIds.size(); i++) {
-            System.out.println("Value = " + finalStudentIds.get(i).intValue());
-
             cleanStudentIds[i] = finalStudentIds.get(i).intValue();
-
-            System.out.println("Value in final array = " + cleanStudentIds[i]);
         }
 
         return cleanStudentIds;
@@ -197,8 +188,6 @@ public class Course {
             for (int j = i + 1; j < mutableStudentIds.size(); j++) {
                 if ((mutableStudentIds.get(i) + mutableStudentIds.get(j)) % 2 == 0) {
                     count++;
-
-                    System.out.println("Current count is :" + count);
                 }
             }
 
@@ -483,17 +472,18 @@ public class Course {
         /*Q4-DONE*/
         System.out.println("Number of even pairs : " + course.groupsOfStudents(course.studentIds));
 
-        /*Q5-DONE
-        Scanner scanner = new Scanner(System.in);
+        /*Q5-DONE*/
+        scanner = new Scanner(System.in);
 
         System.out.println("Enter integer for count-and-say sequence");
 
         int enteredInteger = scanner.nextInt();
         String sequenceString = course.countAndSay(enteredInteger);
 
-        System.out.println("Returned value is : " + sequenceString);*/
+        System.out.println("Sequence value is : " + sequenceString);
 
         /*Q6-DONE*/
+
         course.reverseStringWordByWord("the sky is blue");
 
         /*Q7-DONE*/
@@ -504,6 +494,11 @@ public class Course {
         course.spiralOrder(matrix);
 
         /*Q8-DONE*/
-        course.convert("PAYPALISHIRING", 4);
+
+        scanner = new Scanner(System.in);
+
+        System.out.println("Enter number of rows for zigzag pattern");
+
+        course.convert("PAYPALISHIRING", scanner.nextInt());
     }
 }
