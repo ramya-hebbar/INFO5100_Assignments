@@ -69,7 +69,7 @@ public class Checkout {
             outputStr = outputStr + di.getInvoiceString() + "\n";
         }
 
-        outputStr = outputStr + "Tax\t\t\t\t\t\t" + (this.totalTax*0.01) + "\n";
+        outputStr = outputStr + "\n" + "Tax\t\t\t\t\t\t" + (this.totalTax*0.01) + "\n";
         outputStr = outputStr + "Total Cost\t\t\t\t\t\t" + (this.totalCost*0.01 + this.totalTax*0.01) + "\n";
 
         return outputStr;
