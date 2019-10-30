@@ -136,39 +136,47 @@ public class Question1 {
     }
 
     public void performActionsPostLogin() {
+
         System.out.println("Login successful! What do you wish to do?\n");
-        System.out.println("1. Check Available Balance (BAL)\n" +
-                "2.Withdraw Amount (WIT)\n" +
-                "3.Deposit Amount (DEP)\n" +
-                "4.View Recent Transactions (HIS)\n" +
-                "5.Change Password (CHA)\n" +
-                "6. Exit (EX)");
 
-        Scanner scanner = new Scanner(System.in);
+        String selectedInput;
 
-        String selectedInput = scanner.next();
+        do {
+            System.out.println("1. Check Available Balance (BAL)\n" +
+                    "2.Withdraw Amount (WIT)\n" +
+                    "3.Deposit Amount (DEP)\n" +
+                    "4.View Recent Transactions (HIS)\n" +
+                    "5.Change Password (CHA)\n" +
+                    "6. Exit (EX)");
 
-        if(selectedInput.equals("BAL")) {
-            checkAvailableBalance();
-        }
-        else if(selectedInput.equals("WIT")) {
+            Scanner scanner = new Scanner(System.in);
+
+            selectedInput = scanner.next();
+
+            if(selectedInput.equals("BAL")) {
+                checkAvailableBalance();
+                selectedInput = "";
+            }
+            else if(selectedInput.equals("WIT")) {
 //            withdrawAmount();
-        }
-        else if(selectedInput.equals("DEP")) {
+            }
+            else if(selectedInput.equals("DEP")) {
 //            depositAmount();
-        }
-        else if(selectedInput.equals("HIS")) {
-            viewRecentTransactions();
-        }
-        else if(selectedInput.equals("CHA")) {
-            changePassword();
-        }
-        else if(selectedInput.equals("EX")) {
-            return;
-        }
-        else {
-            System.out.println("Invalid input - please try again");
-        }
+            }
+            else if(selectedInput.equals("HIS")) {
+                viewRecentTransactions();
+            }
+            else if(selectedInput.equals("CHA")) {
+                changePassword();
+            }
+            else if(selectedInput.equals("EX")) {
+
+            }
+            else {
+                System.out.println("Invalid input - please try again");
+            }
+
+        } while(!selectedInput.equals("EX"));
     }
 
     public void checkAvailableBalance() {
