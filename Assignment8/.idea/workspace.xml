@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6598f06a-23ea-4e5e-bc37-13331df91889" name="Default Changelist" comment="" />
+    <list default="true" id="ece37859-d7ba-493e-aea6-f0aad35b619b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +18,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1SrCtGZxV0qfEff7sJosFFl2g9Y" />
+  <component name="ProjectId" id="1TLR0Ko0I03Aimb0cVJvh6ecvq7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -36,10 +35,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Question1">
-    <configuration name="Question1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question1.Question1" />
-      <module name="Assignment6" />
+  <component name="RunManager" selected="Application.StudentUI">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question1.Calculator" />
+      <module name="Assignment8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Question1.*" />
@@ -50,26 +49,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Question3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question3" />
-      <module name="Assignment6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question4" />
-      <module name="Assignment6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Question5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Question5.Question5" />
-      <module name="Assignment6" />
+    <configuration name="StudentUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Question2.StudentUI" />
+      <module name="Assignment8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Question5.*" />
+          <option name="PATTERN" value="Question2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,10 +64,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Question1" />
-        <item itemvalue="Application.Question5" />
-        <item itemvalue="Application.Question4" />
-        <item itemvalue="Application.Question3" />
+        <item itemvalue="Application.StudentUI" />
+        <item itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -91,11 +74,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6598f06a-23ea-4e5e-bc37-13331df91889" name="Default Changelist" comment="" />
-      <created>1572312540770</created>
+      <changelist id="ece37859-d7ba-493e-aea6-f0aad35b619b" name="Default Changelist" comment="" />
+      <created>1573237164983</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572312540770</updated>
+      <updated>1573237164983</updated>
     </task>
     <servers />
   </component>
@@ -104,9 +87,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -116,9 +97,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Question5/MyHashMap.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/Question2/StudentUI.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
